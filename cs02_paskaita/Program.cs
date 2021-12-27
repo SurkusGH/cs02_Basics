@@ -36,9 +36,13 @@ namespace cs02_paskaita
             //asignment5();
             //asignment6();
             //asignment7();
-            asignment8();
-            asignment9();
+            //asignment8();
+            //asignment9();
             //asignment10();
+            //asignment11();
+            //asignment12();
+            asignment13();
+            asignment14();
 
         }
 
@@ -159,6 +163,43 @@ namespace cs02_paskaita
             string lastName = Console.ReadLine();
 
             Console.WriteLine($"{name}, {lastName}");
+        }
+
+        public static void asignment11()
+        {
+            Console.WriteLine($"String input please");
+            string input = Console.ReadLine();
+            Console.WriteLine($"String to lower-case:{input.ToLower()}");
+            Console.WriteLine($"String to upper-case:{input.ToUpper()}");
+        }
+
+        public static void asignment12()
+        {
+            Console.WriteLine($"Digit input please");
+            int input2 = int.Parse(Console.ReadLine());
+            var checkInput2 = input2 % 3 == 0 ? "dalinasi iš 3" : "nesidalina iš 3";
+            var checkInput3 = input2 % 7 == 0 ? "dalinasi iš 7" : "nesidalina iš 7";
+
+            Console.WriteLine(checkInput2);
+            Console.WriteLine(checkInput3);
+        }
+
+        public static void asignment13()
+        {
+            // Write a C# program to check if a string starts with a specified word.
+            Console.WriteLine($"String input please (start w/ hello)");
+            string input3 = Console.ReadLine();
+
+            var checkInput3 = input3.Substring(0, 5) == "hello" ? "Prasideda su hello" : "neprasideda su hello";
+            Console.WriteLine(checkInput3);
+        }
+
+        public static void asignment14()
+        {
+            // Write a program in C# Sharp to count the total number of words in a string.
+            Console.WriteLine($"String input please");
+            string input3 = Console.ReadLine();
+            Console.WriteLine(input3.Length);
         }
     }
 }
